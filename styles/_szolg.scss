@@ -1,0 +1,42 @@
+.szolg {
+    color: $clr-main;
+    padding-bottom: 64px;
+    h1 {
+        text-align: center;
+        font-size: $fs-h3;
+        padding-block: 64px;
+    }
+
+    .szolg-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 16px;
+        grid-row-gap: 0px;
+        text-align: center;
+        margin-block: 5rem;
+
+        @media only screen and (max-width: 700px) {
+            display: block;
+
+            &>* {
+                padding-block: 16px;
+            }
+
+        }
+
+        h5 {
+            font-size: $fs-h5;
+        }
+
+        img {
+            padding-bottom: 24px;
+        }
+
+    }
+
+    .szolg-1 { grid-area: 1 / 1 / 2 / 2; }
+    .szolg-2 { grid-area: 1 / 2 / 2 / 3; }
+    .szolg-3 { grid-area: 1 / 3 / 2 / 4; }
+
+}

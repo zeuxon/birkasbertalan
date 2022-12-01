@@ -1,0 +1,56 @@
+* {
+    font-size: $fs-main;
+}
+
+nav {
+    text-align: right;
+    padding-block: 15px;
+    border-bottom: 2px solid $clr-main;
+    display: flex;
+    justify-content: right;
+    display: none;
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
+
+    img {
+        display: none;
+
+        @media only screen and (max-width: 500px) {
+            display: block;
+        }
+
+    }
+
+    
+    
+}
+
+nav a {
+    color: $clr-main;
+    text-decoration: none;
+    font-family: $ff-main;
+    padding: 15px;
+
+    @media only screen and (max-width: 500px) {
+        display: none;
+    }
+
+}
+
+nav a:nth-child(3) {
+    background: $clr-main;
+    color: $clr-primary;
+    margin-right: 50px;
+    margin-left: 5px;
+}
+
+nav a:hover {
+    color: $clr-active;
+}
+
+nav a:nth-child(3):hover {
+    background: $clr-active;
+    color: $clr-primary;
+}

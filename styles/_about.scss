@@ -1,0 +1,48 @@
+.about {
+    color: $clr-main;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+
+    h2 {
+        font-size: $fs-h2;
+        font-weight: 900;
+        padding-bottom: 42px;
+    }
+
+    p {
+        font-size: 18px;
+        padding-bottom: 46px;
+        text-overflow: clip;
+        width: 70%;
+        margin: 0 auto;
+
+        @media only screen and (max-width: 1200px) {
+            width: 100%;
+        }
+
+    }
+
+    a {
+        padding: 16px;
+        border: 2px solid $clr-main;
+        background: $clr-primary;
+        color: $clr-main;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background: $clr-active;
+        color: $clr-primary;
+        border-color: $clr-active;
+    }
+
+}
+
+.about-img {
+    width: 80%;
+    height: 700px;
+    background: lightgray;
+    margin: 56px auto;
+    border: 2px solid $clr-main;
+}

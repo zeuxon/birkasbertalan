@@ -1,0 +1,57 @@
+$clr-main: #1E491B;
+$clr-primary: #FFFFFF;
+$clr-secondary: #F4F4F4;
+$clr-active: #1bc015;
+
+$fs-main: 16px;
+$fs-h1: 56px;
+$fs-h2: 48px;
+$fs-h3: 40px;
+$fs-h4: 32px;
+$fs-h5: 24px;
+$fs-h6: 20px;
+
+$ff-main: "Roboto";
+
+* {
+    font-family: $ff-main;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a {
+    transition: .4s;
+
+
+    &:hover {
+        transition: .4s;
+    }
+}
+
+body {
+    background: $clr-primary
+}
+
+a {
+    word-break: keep-all;
+    overflow: visible;
+}
+
+@import 'nav';
+
+@import 'hero';
+
+@import 'szolg';
+
+@import 'about';
+
+@import 'adatok';
+
+@import 'contact';
+
+footer {
+    text-align: right;
+    padding: 15px;
+}
