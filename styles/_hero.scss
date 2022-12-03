@@ -6,119 +6,120 @@
     grid-row-gap: 0px;
     padding: 50px;
 
-    @media only screen and (max-width: 1000px) {
+    @media only screen and (max-width: 700px) {
         padding: 50px 15px;
         display: block;
     }
 
-}
-    
-.hero .hero-texts { grid-area: 1 / 1 / 2 / 2; }
-.hero .hero-img { grid-area: 1 / 2 / 2 / 3; }
+    .hero-texts { grid-area: 1 / 1 / 2 / 2; }
+    .hero-img { grid-area: 1 / 2 / 2 / 3; }
 
-.hero .hero-img {
-    background: lightgray;
-    width: 500px;
-    height: 540px;
-    margin: 0 auto;
-    border: 2px solid $clr-main;
+    .hero-img {
 
-    @media only screen and (max-width: 1000px) {
-        margin-top: 24px;
-        width: 90%;
-    }
-
-}
-
-.hero .hero-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: $clr-main;
-    width: 80%;
-    margin: 0 auto;
-    h1 {
-        font-size: $fs-h1;
-        font-family: "Rowdies";
-    }
-
-    p {
-        padding-top: 0px;
-        padding-bottom: 48px;
-    }
-
-    a {
-        padding: 16px;
-        text-decoration: none;
-    }
-
-    a:nth-child(1) {
-        color: $clr-primary;
-        border: 2px solid $clr-main;
-        background: $clr-main;
-        margin-right: 16px;
-    }
-
-    a:nth-child(1):hover {
-        background: $clr-active;
-        color: $clr-primary;
-        border-color: $clr-active;
-    }
-
-    a:nth-child(2) {
-        border: 2px solid $clr-main;
-        background: $clr-primary;
-        color: $clr-main;
-    }
-
-    a:nth-child(2):hover {
-        background: $clr-active;
-        color: $clr-primary;
-        border-color: $clr-active;
-    }
-
-    @media only screen and (max-width: 1240px) and (min-width: 1001px) {
-        .hero-btns {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                width: fit-content;
-
-                &:nth-child(1) {
-                    margin-bottom: 24px;
-                }
-
-            }
-
+        img {
+            border: 2px solid $clr-main;
         }
-
-
+    
+        align-items: center;
+        display: flex;
+        margin: 0 auto;
+    
+    
+        @media only screen and (max-width: 700px) {
+            margin-top: 24px;
+            justify-content: center;
+    
+        }
+    
     }
 
-    @media only screen and (max-width: 1000px) and (min-width: 450px) {
-        .hero-btns {
-            display: flex;
-            flex-direction: row;
-        }    
-    }
-
-    @media only screen and (max-width: 450px) {
-        .hero-btns {
-            display: flex;
-            flex-direction: column;
-
-            a {
-                width: fit-content;
-
-                &:nth-child(1) {
-                    margin-bottom: 24px;
+    .hero-texts {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $clr-main;
+        width: 80%;
+        margin: 0 auto;
+        h1 {
+            font-size: $fs-h1;
+            font-family: "Rowdies";
+        }
+    
+        p {
+            padding-top: 0px;
+            padding-bottom: 48px;
+        }
+    
+        a {
+            padding: 16px;
+            text-decoration: none;
+        }
+    
+        a:nth-child(1) {
+            color: $clr-primary;
+            border: 2px solid $clr-main;
+            background: $clr-main;
+            margin-right: 16px;
+        }
+    
+        a:nth-child(1):hover {
+            background: $clr-active;
+            color: $clr-primary;
+            border-color: $clr-active;
+        }
+    
+        a:nth-child(2) {
+            border: 2px solid $clr-main;
+            background: $clr-primary;
+            color: $clr-main;
+        }
+    
+        a:nth-child(2):hover {
+            background: $clr-active;
+            color: $clr-primary;
+            border-color: $clr-active;
+        }
+    
+        @media only screen and (max-width: 1240px) and (min-width: 701px) {
+            .hero-btns {
+                display: flex;
+                flex-direction: column;
+    
+                a {
+                    width: fit-content;
+    
+                    &:nth-child(1) {
+                        margin-bottom: 24px;
+                    }
+    
                 }
-
             }
+        }
+    
+        @media only screen and (max-width: 700px) and (min-width: 450px) {
+            .hero-btns {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }    
+        }
+    
+        @media only screen and (max-width: 450px) {
+            .hero-btns {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                a {
+                    width: fit-content;
+    
+                    &:nth-child(1) {
+                        margin-bottom: 24px;
+                        margin-right: 0px;
+                    }
 
-        }    
+                }
+            }    
+        }
     }
-
 }
-

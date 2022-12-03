@@ -1,5 +1,6 @@
 .szolg {
     color: $clr-main;
+    margin-inline: 1rem;
     padding-bottom: 64px;
     h1 {
         text-align: center;
@@ -11,10 +12,10 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
-        grid-column-gap: 16px;
+        grid-column-gap: 32px;
         grid-row-gap: 0px;
         text-align: center;
-        margin-block: 5rem;
+        margin-block: 2rem;
 
         @media only screen and (max-width: 700px) {
             display: block;
