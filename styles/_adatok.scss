@@ -1,16 +1,37 @@
 .adatok {
     color: $clr-main;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 16px;
+    grid-row-gap: 0px;
     justify-content: center;
     align-items: center;
-    margin-block: 3rem;
+    margin-block: 6rem;
+    margin-inline: 2rem;
+
+    @media only screen and (max-width: 850px) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
 
     @media only screen and (max-width: 550px) {
         margin-top: 3rem;
     }
+    
+    .adatok-adat { grid-area: 1 / 1 / 2 / 2; }
+    .adatok-img { grid-area: 1 / 2 / 2 / 3; }
 
-    h2 {
-        font-size: $fs-h2;
+    .adatok-img {
+
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: clamp(50%, 1000px, 270px);
+            border: 2px solid $clr-main;
+            box-shadow: 0 6px 18px 0px rgba(0, 0, 0, 0.308);
+        }
+        
     }
 }
 
@@ -19,8 +40,12 @@
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 80px;
     grid-row-gap: 40px;
-    height: fit-content;
-    margin-top: 0;
+    margin-inline: auto;
+
+    @media only screen and (max-width: 850px) {
+        margin-block: 4rem;
+        text-align: center;
+    }
 
     @media only screen and (max-width: 550px) {
         display: flex;
@@ -28,7 +53,11 @@
         align-items: center;
         margin-top: 5rem;
         width: 90%;
-        margin: 0 auto;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        font-size: $fs-h2;
     }
 
     h2 { grid-area: 1 / 1 / 2 / 3; }
